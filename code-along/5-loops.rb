@@ -2,10 +2,23 @@
 # is the same as where this file is located and then run:
 # ruby 5-loops.rb
 
+
 # Infinite Tacos -> Finite Tacos
 # loop do
 #   puts "tacos!"
 # end
 
+
+
 # Loop through tacos
-# tacos = ["carnitas", "carne asada", "pollo", "pescado"]
+tacos = ["carnitas", "carne asada", "pollo", "pescado"]
+
+index = 0
+loop do
+    if index == 5
+        break
+    end
+    taco = tacos[index]
+    puts "#{taco} tacos!"
+index = index + 1
+end
